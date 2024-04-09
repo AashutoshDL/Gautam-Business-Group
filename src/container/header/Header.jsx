@@ -11,12 +11,12 @@ const Header = () => {
 
   // Simulate a typewriter effect for the header text
   useEffect(() => {
-    const text = "Welcome to Gautam Chemicals!Step into a world of innovation and excellence. Explore our offerings and discover the essence of Gautam Chemicals. From high-quality chemicals to personalized solutions, we're here to exceed your expectations.Get in touch with us to explore opportunities for collaboration.We look forward to welcoming you into the Gautam Chemicals family."
+    const text="Welcome to Gautam Chemicals"
     let currentIndex = 0;
 
     const interval = setInterval(() => {
       setHeaderText(text.substring(0, currentIndex + 1));
-      currentIndex++;
+      currentIndex++; 
 
       if (currentIndex === text.length) {
         clearInterval(interval);
@@ -29,8 +29,8 @@ const Header = () => {
   return (
   <div className='gpt3__header section__padding' id="home">
     <div className='gpt3__header-content'>
-      <h1 className='gradient__text'>Welcome to <br /> Gautam Chemicals</h1>
-      <p>{headerText}</p>
+      <h1 className='gradient__text'>{headerText}</h1>
+      <p>"Welcome to Gautam Chemicals!Step into a world of innovation and excellence. Explore our offerings and discover the essence of Gautam Chemicals. From high-quality chemicals to personalized solutions, we're here to exceed your expectations.Get in touch with us to explore opportunities for collaboration.We look forward to welcoming you into the Gautam Chemicals family."</p>
       {/* <div className='gpt3__header-content__input'>
         <input type='email' placeholder='Your Email Address' />
         <button type='button'>Get Started</button>

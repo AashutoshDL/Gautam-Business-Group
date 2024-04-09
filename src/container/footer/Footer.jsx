@@ -1,5 +1,5 @@
 import React from 'react';
-import gpt3Logo from '../../assets/logo.svg';
+// import gpt3Logo from '../../assets/logo.svg';
 import './footer.css';
 
 const Footer = () => (
@@ -14,7 +14,7 @@ const Footer = () => (
 
     <div className="gpt3__footer-links">
       <div className="gpt3__footer-links_logo">
-        <img src={gpt3Logo} alt="gpt3_logo" />
+        {/* <img src={gpt3Logo} alt="gpt3_logo" /> */}
         <p>Kareshwor Mandir, Baneshowr, Kathmandu <br /> All Rights Reserved</p>
       </div>
       <div className="gpt3__footer-links_div">
